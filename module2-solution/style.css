@@ -1,72 +1,56 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
-  margin:0;
-}
-h1 {
-  margin-bottom: 30px;
-  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-section{
-  width: 90%;
-  height: 170px;
-  position: relative;
-  margin-left:auto; 
-  margin-right: auto;
-  border: 1px solid black;
-  background-color: black;
-  overflow: auto;
-  margin-bottom: 10px;
- }
- #HTML{
-  border: 1px solid black;
+h1 {
+  margin-bottom: 15px;
   text-align: center;
-  width: 30%;
-  margin-left: 70%;
-  font-family: Georgia,sans-serif;
-  font-weight: bold;
-  font-size: 125%;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 5px;
-  background-color: #FFFF00;
- }
-#css{
-    border: 1px solid black;
-  text-align: center;
-  width: 30%;
-  margin-left: 70%;
-  font-family: Georgia,sans-serif;
-  font-weight: bold;
-  font-size: 125%;
-  margin-bottom: 0;
-  margin-top: 0;
-  background-color: #6495ED;
-  color: white;
-  padding: 5px;
+  color: #ff4532;
+  font-size: 50px;
 }
-#js{
-  border: 1px solid black;
-  text-align: center;
-  width: 30%;
-  margin-left: 70%;
-  font-family: Georgia,sans-serif;
-  font-weight: bold;
-  font-size: 125%;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 5px;
-  background-color: #FF1439;
+p{
+    margin:0px;
+    color: #87FD01;
 }
-p {
-  font-family: decorative;
-  color: #87FD01;
-}
-/* Simple Responsive Framework. */
 .row {
   width: 100%;
 }
+.col{
+	width:90%;
+	position:relative;
+	border:1px solid #87FD01;
+	background-color:black; 
+    height:200px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:10px; 
+    overflow: auto
+}
+
+ .tittle{
+  text-align: center;
+  position: relative;
+  border: 1px solid black;
+  text-align: center;
+  width: 30%;
+  margin-left: 70%;
+  font-weight: bold;
+  font-size: 125%;
+ }
+ .tittle#HTML{
+  background-color: #FFFF00;
+ }
+.tittle#css{
+  background-color: #6495ED;
+  color: white;
+}
+.tittle#js{
+  background-color: #FF1439;
+}
+
+/* Simple Responsive Framework. */
 
 /********** desktop version **********/
 @media (min-width: 992px) {
@@ -85,6 +69,7 @@ p {
     width: 50%;
   }
   .col-md-12 {
+    margin-left: -19px;
     width: 100%;
   }
 }
