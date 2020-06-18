@@ -1,0 +1,81 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ff4532;
+  font-size: 50px;
+}
+p{
+    margin:0px;
+    color: #87FD01;
+}
+.row {
+  width: 100%;
+}
+.col{
+	width:90%;
+	position:relative;
+	border:1px solid #87FD01;
+	background-color:black; 
+    height:200px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:10px; 
+    overflow: auto
+}
+
+ .tittle{
+  text-align: center;
+  position: relative;
+  border: 1px solid black;
+  text-align: center;
+  width: 30%;
+  margin-left: 70%;
+  font-weight: bold;
+  font-size: 125%;
+ }
+ .tittle#HTML{
+  background-color: #FFFF00;
+ }
+.tittle#css{
+  background-color: #6495ED;
+  color: white;
+}
+.tittle#js{
+  background-color: #FF1439;
+}
+
+/* Simple Responsive Framework. */
+
+/********** desktop version **********/
+@media (min-width: 992px) {
+.col-lg-4{
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-md-6,.col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    margin-left: -19px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px){
+ .col-s-12 {
+    float: left;
+    width:100%;
+  }
+}
